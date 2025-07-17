@@ -1,0 +1,22 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: sdtest_defaults
+name: my-sample-service-sdtest
+owner: shibam-owner
+orgIdentifier: default
+projectIdentifier: sd2
+spec:
+  lifecycle: experimental
+  ownedBy:
+  - group/sample-group
+metadata:
+  description: My Sample service.
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/source-location: url:https://github.com/Sdhar-ORG-Harness/pipeline6/blob/main/gen-code.yaml
+  links:
+  - title: Website
+    url: http://my-sample-website.com
+  tags:
+  - my-sample
